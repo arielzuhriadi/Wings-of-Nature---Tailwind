@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Wings of Nature</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full bg-[#283e52] backdrop-blur-md border-b border-white/10 text-[#F5F1E8] py-5 z-30">
+        <nav class="container mx-auto grid grid-cols-3 justify-between items-center"
+            style="width: 80%; margin: 0 auto;">
+            <div class="flex items-center">
+                <h1
+                    class="text-2xl font-['Pacifico'] ml-[-3vh] text-[#F5F1E8] hover:cursor-pointer hover:text-[#cdddea]">
+                    Wings of Nature</h1>
+            </div>
+            <div class="flex gap-5">
+                <li class="list-none text-[#F5F1E8] hover:text-[#cdddea] hover:underline"><a href="#home">Home</a></li>
+                <li class="list-none text-[#F5F1E8] hover:text-[#cdddea] hover:underline"><a
+                        href="#collection">Collection</a></li>
+                <li class="list-none text-[#F5F1E8] hover:text-[#cdddea] hover:underline"><a href="#about">About</a>
+                </li>
+                <li class="list-none text-[#F5F1E8] hover:text-[#cdddea] hover:underline"><a href="#galery">Galery</a>
+                </li>
+                <li class="list-none text-[#F5F1E8] hover:text-[#cdddea] hover:underline"><a href="#contact">Contact</a>
+                </li>
+            </div>
+            <div class="flex justify-end" id="wa">
+                <a href=""
+                    class="px-15 py-2 bg-[#f4f8fb] flex gap-2 rounded-md hover:cursor-pointer hover:shadow-sm shadow-white">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-2xl"></i>
+                    <p class="text-[#191d16]">WhatsApp</p>
+                </a>
+            </div>
+            <div class="menu-toggle text-2xl cursor-pointer text-white md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- END OFF HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="bg-[#f4f8fb]">
+        <!-- home -->
+        <section id="home" class="h-screen py-[20vh]">
+            <div class="container mx-auto grid grid-cols-2 items-center" style="width: 80%; margin: 0 auto;">
+                <div>
+                    <h1 class="text-5xl font-bold" data-aos="fade-right" data-aos-duration="1000">Nature Captured
+                        Through Art</h1>
+                    <p class="pt-5" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Accusamus, excepturi
+                        maiores distinctio
+                        odio voluptatum quibusdam suscipit in amet aperiam, quae deserunt pariatur asperiores molestias
+                        esse unde. Veniam illum ullam nostrum!</p>
+
+                    <div class="pt-5 flex gap-5">
+                        <a href=""
+                            class="bg-[#6ea0c2] px-5 py-2 rounded-md hover:shadow-md hover:cursor-pointer font-semibold text-[#f4f8fb]"
+                            data-aos="zoom-in" data-aos-duration="2000">Explore
+                            Collection</a>
+                        <a href=""
+                            class="bg-[#6ea0c2] px-5 py-2 rounded-md hover:shadow-md hover:cursor-pointer font-semibold text-[#f4f8fb]"
+                            data-aos="zoom-in" data-aos-duration="2000">View
+                            Gallery</a>
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <img src="logo/logo.png" alt="logo" data-aos="zoom-in-left" data-aos-duration="1000">
+                </div>
+            </div>
+        </section>
+        <!-- collection -->
+        <section id="collection" class="h-screen py-20">
+            <div class="container mx-auto" style="width: 80%; margin: 0 auto;">
+                <h2 class="text-4xl font-semibold text-center">Featured Artwork</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veritatis?</p>
+
+
+                <div class="card grid grid-cols-4 pt-20 gap-5">
+                    <div class="card-items shadow-md rounded-md hover:cursor-pointer hover:shadow-2xl h-full w-full object-cover hover:bg-[#e8eff6]"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <div>
+                            <img src="img/1.jpg" alt="img" class="w-full h-[35vh] object-cover object-top rounded-md">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xl font-bold py-2">The Naturalist's</p>
+                            <p class="text-sm py-1">Sekitar 1837</p>
+                            <p class="text-sm py-1">Hand-colored steel engraving (Ukiran baja yang diwarnai dengan
+                                tangan).</p>
+                        </div>
+                    </div>
+                    <div class="card-items shadow-md rounded-md hover:cursor-pointer hover:shadow-2xl h-full w-full object-cover hover:bg-[#e8eff6]"
+                        data-aos="fade-up" data-aos-duration="1500">
+                        <div>
+                            <img src="img/2.jpg" alt="img" class="w-full h-[35vh] object-cover object-top rounded-md">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xl font-bold py-2">Rook & Jackdaw</p>
+                            <p class="text-sm py-1">Akhir abad ke-19 (sekitar 1885–1897)</p>
+                            <p class="text-sm py-1">Chromolithography (Kromolitografi) yang direproduksi dari lukisan
+                                cat air asli.</p>
+                        </div>
+                    </div>
+                    <div class="card-items shadow-md rounded-md hover:cursor-pointer hover:shadow-2xl h-full w-full object-cover hover:bg-[#e8eff6]"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        <div>
+                            <img src="img/3.jpg" alt="img" class="w-full h-[35vh] object-cover object-top rounded-md">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xl font-bold py-2">Peacock</p>
+                            <p class="text-sm py-1">Pertengahan abad ke-19 (sekitar tahun 1860-an)</p>
+                            <p class="text-sm py-1">Chromoxylography (Cetak balok kayu berwarna).</p>
+                        </div>
+                    </div>
+                    <div class="card-items shadow-md rounded-md hover:cursor-pointer hover:shadow-2xl h-full w-full object-cover hover:bg-[#e8eff6]"
+                        data-aos="fade-up" data-aos-duration="2500">
+                        <div>
+                            <img src="img/4.jpg" alt="img" class="w-full h-[35vh] object-cover object-top rounded-md">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-xl font-bold py-2">Golden-Crowned Conure</p>
+                            <p class="text-sm py-1">Sekitar 1836</p>
+                            <p class="text-sm py-1">Hand-colored steel engraving (Ukiran baja yang diwarnai dengan
+                                tangan).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about" class="py-30">
+            <div class="container mx-auto" style="width: 80%; margin: 0 auto;">
+                <h2 class="text-4xl font-semibold text-center">About The Artwork</h2>
+                <p class="italic text-center">"Each illustration reflects the harmony between nature and artistic
+                    detail, <br>
+                    inspired by
+                    traditional wildlife studies."</p>
+
+                <div class="card grid grid-cols-2 gap-5 pt-15">
+                    <div class="card-items bg-[#cdddea] p-5 rounded-md shadow-xl" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <h2 class="text-2xl font-semibold italic">Artwork Philosophy</h2>
+                        <p class="italic">Every stroke reflects the harmony between nature and artistic detail, inspired
+                            by the beauty of wild birds living freely in their natural habitat.</p>
+                    </div>
+                    <div class="card-items bg-[#cdddea] p-5 rounded-md shadow-xl" data-aos="fade-left"
+                        data-aos-duration="1000">
+                        <h2 class="text-2xl font-semibold italic">Nature Inspiration</h2>
+                        <p class="italic">The patterns and color compositions are drawn directly from observations of
+                            nature — the feathers, movements, and expressions of birds in their natural habitat.</p>
+                    </div>
+                    <div class="card-items bg-[#cdddea] p-5 rounded-md shadow-xl" data-aos="fade-right"
+                        data-aos-duration="2000">
+                        <h2 class="text-2xl font-semibold italic">Illustration Techniques</h2>
+                        <p class="italic">Using a combination of watercolor, ink pen, and pencil techniques to create
+                            rich textures and delicate details.</p>
+                    </div>
+                    <div class="card-items bg-[#cdddea] p-5 rounded-md shadow-xl" data-aos="fade-left"
+                        data-aos-duration="2000">
+                        <h2 class="text-2xl font-semibold italic">Creative Process</h2>
+                        <p class="italic">Each artwork goes through a process of field sketch studies, composition
+                            development, and final coloring that takes days to complete.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- galery -->
+        <section id="galery" class="py-30">
+            <div class="container mx-auto" style=" width: 80%; margin: 0 auto;">
+                <h2 class="text-4xl font-semibold text-center">Gallery Showcase</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sed?</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 pt-20">
+
+                    <!-- Card 1 — Large Featured Left -->
+                    <div class="card card-featured md:col-span-7 relative rounded-2xl overflow-hidden cursor-pointer h-[460px] group"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/1.jpg" alt="Mountains"
+                            class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                        <div class="card-overlay absolute inset-0 z-10"></div>
+                        <div class="absolute inset-0 z-20 flex flex-col justify-between p-7">
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="card-tag text-[11px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1.5 rounded-full backdrop-blur-sm">
+                                    William Swainson
+                                </span>
+
+                            </div>
+                            <div>
+                                <div class="divider-line h-px bg-white/30 mb-4"></div>
+                                <div class="flex items-end justify-between">
+                                    <div>
+                                        <h2 class="card-title text-white text-2xl font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Great African Kingfisher
+                                        </h2>
+                                    </div>
+                                    <div class="card-arrow text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column — 2 stacked cards -->
+                    <div class="md:col-span-5 flex flex-col gap-4">
+
+                        <!-- Card 2 -->
+                        <div class="card relative rounded-2xl overflow-hidden cursor-pointer h-[220px] group"
+                            data-aos="fade-left" data-aos-duration="1000">
+                            <img src="img/2.jpg" alt="Forest"
+                                class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                            <div class="card-overlay absolute inset-0 z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                                <span
+                                    class="card-tag text-[10px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1 rounded-full w-fit backdrop-blur-sm">
+                                    Archibald Thorburn
+                                </span>
+                                <div class="flex items-end justify-between">
+                                    <div>
+                                        <div class="divider-line h-px bg-white/30 mb-3"></div>
+                                        <h2 class="card-title text-white text-lg font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Rook & Jackdaw
+                                        </h2>
+                                    </div>
+                                    <div class="card-arrow text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card relative rounded-2xl overflow-hidden cursor-pointer h-[220px] group"
+                            data-aos="fade-left" data-aos-duration="2000">
+                            <img src="img/3.jpg" alt="Beach"
+                                class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                            <div class="card-overlay absolute inset-0 z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                                <span
+                                    class="card-tag text-[10px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1 rounded-full w-fit backdrop-blur-sm">
+                                    Leighton Bros
+                                </span>
+                                <div class="flex items-end justify-between">
+                                    <div>
+                                        <div class="divider-line h-px bg-white/30 mb-3"></div>
+                                        <h2 class="card-title text-white text-lg font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Peacock
+                                        </h2>
+                                    </div>
+                                    <div class="card-arrow text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom Row — 4 equal cards -->
+                    <div class="md:col-span-4">
+                        <div class="card relative rounded-2xl overflow-hidden cursor-pointer h-[240px] group"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <img src="img/4.jpg" alt="Snow"
+                                class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                            <div class="card-overlay absolute inset-0 z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                                <span
+                                    class="card-tag text-[10px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1 rounded-full w-fit backdrop-blur-sm">
+                                    Prideaux John Selby
+                                </span>
+                                <div>
+                                    <div class="divider-line h-px bg-white/30 mb-3"></div>
+                                    <div class="flex items-end justify-between">
+                                        <h2 class="card-title text-white text-lg font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Golden-Crowned Conure
+                                        </h2>
+                                        <div class="card-arrow text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="md:col-span-4">
+                        <div class="card relative rounded-2xl overflow-hidden cursor-pointer h-[240px] group"
+                            data-aos="fade-up" data-aos-duration="1500">
+                            <img src="img/5.jpg" alt="Sunset"
+                                class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                            <div class="card-overlay absolute inset-0 z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                                <span
+                                    class="card-tag text-[10px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1 rounded-full w-fit backdrop-blur-sm">
+                                    Eropa klasik
+                                </span>
+                                <div>
+                                    <div class="divider-line h-px bg-white/30 mb-3"></div>
+                                    <div class="flex items-end justify-between">
+                                        <h2 class="card-title text-white text-lg font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Pesquet's Parrot
+                                        </h2>
+                                        <div class="card-arrow text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="md:col-span-4" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card relative rounded-2xl overflow-hidden cursor-pointer h-[240px] group">
+                            <img src="img/6.jpg" alt="Desert"
+                                class="card-img w-full h-full object-cover object-top absolute inset-0" />
+                            <div class="card-overlay absolute inset-0 z-10"></div>
+                            <div class="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                                <span
+                                    class="card-tag text-[10px] tracking-[0.25em] uppercase text-white/70 bg-white/10 px-3 py-1 rounded-full w-fit backdrop-blur-sm">
+                                    N. Hoffmeister
+                                </span>
+                                <div>
+                                    <div class="divider-line h-px bg-white/30 mb-3"></div>
+                                    <div class="flex items-end justify-between">
+                                        <h2 class="card-title text-white text-lg font-semibold"
+                                            style="font-family:'Playfair Display',serif;">
+                                            Elang Botak
+                                        </h2>
+                                        <div class="card-arrow text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center mt-[5vh]">
+                    <button
+                        class="flex gap-2 items-center px-5 py-2 rounded-sm bg-[#cdddea] hover:shadow-md hover:cursor-pointer">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p>see more</p>
+                    </button>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="contact" class="py-20 bg-[#cdddea]">
+            <div class="container mx-auto" style="width: 80%; margin: 0 auto;">
+                <p class="text-center">Get In Touch</p>
+                <h2 class="text-4xl font-semibold text-center">Interested in owning or collaborating on artwork?</h2>
+
+                <div class="flex justify-center gap-10 pt-5">
+                    <button
+                        class="flex gap-2 items-center px-5 py-2 rounded-sm bg-[#e8eff6] hover:shadow-md hover:cursor-pointer">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Instagram</p>
+                    </button>
+                    <button
+                        class="flex gap-2 items-center px-5 py-2 rounded-sm bg-[#e8eff6] hover:shadow-md hover:cursor-pointer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Instagram</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- END OFF MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1c2b3a] pt-10 text-white">
+        <div class="container mx-auto grid grid-cols-3" style="width: 80%; margin: 0 auto;">
+            <div>
+                <img src="logo/logo.png" alt="logo" width="30%" class="bg-white rounded-md">
+                <h2 class="text-2xl font-semibold py-2"> Wings of Nature</h2>
+                <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veniam.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold">SOCIAL MEDIA</h2>
+                <div class="py-3 flex flex-col gap-2">
+                    <a href="">
+                        <div class="flex items-center gap-2 hover:text-[#cdddea] hover:underline">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="flex items-center gap-2 hover:text-[#cdddea] hover:underline">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Facebook</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="flex items-center gap-2 hover:text-[#cdddea] hover:underline">
+                            <i class="fa-brands fa-tiktok"></i>
+                            <p>Tiktok</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold">LOCATION</h2>
+
+                <div class="py-5">
+                    <iframe class="w-full h-[35vh] rounded-md"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15474.604384014818!2d98.67651832246625!3d3.5849028594746506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1779038963500!5m2!1sid!2sid"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center py-5 bg-[#283e52]">Copyright &copy; Wings of Nature By Ruang Coding</p>
+    </footer>
+    <!-- END OFF FOOTER -->
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('nav .flex.gap-5');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            document.body.classList.toggle('sidebar-open');
+        });
+
+        // klik link otomatis tutup
+        document.querySelectorAll('nav .flex.gap-5 li a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+                document.body.classList.remove('sidebar-open');
+            });
+        });
+
+        // klik area gelap (overlay fake via body)
+        document.body.addEventListener('click', (e) => {
+            if (document.body.classList.contains('sidebar-open')) {
+                if (!e.target.closest('nav')) {
+                    menu.classList.remove('active');
+                    document.body.classList.remove('sidebar-open');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
